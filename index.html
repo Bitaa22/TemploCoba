@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de página web</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body class="inicio-pagina">
+    <header>
+        <table id="tabla-encabezado">
+            <tr>
+                <td><a href="#inicio"><img src="assets/img/logo_sin_fondo_texto.png" alt="Imagen del logotipo"></a></td>
+                <td><a href="#inicio">Inicio</a></td>
+                <td><a href="assets/html/productos.html#productos">Productos</a></td>
+                <td><a href="assets/html/mis_actividades.html#mis-actividades">Mis actividades</a></td>
+                <td><a href="#contacto">Contacto</a></td>
+                <td><a href="assets/html/inicio_de_sesion.html#inicio-sesion">Inicio de sesión</a></td>
+            </tr>
+        </table>
+    </header>
+<nav id="inicio" class="inicio-hero">
+    <video class="inicio-video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="assets/img/video_inicio.mp4" type="video/mp4">
+    </video>
+    <div class="inicio-contenido">
+        <p class="inicio-etiqueta">TEMPLO COBA · CENTRO DE ENTRENAMIENTO</p>
+        <h1>Entrena para superar tus límites</h1>
+        <p>Un espacio pensado para que entrenes con energía, mejores cada día y disfrutes del proceso.</p>
+        <div class="inicio-acciones">
+            <a class="boton-dorado" href="#actividades">Explorar actividades</a>
+            <a class="boton-contorno" href="assets/html/productos.html#productos">Ver productos</a>
+        </div>
+        <div class="inicio-datos" aria-label="Datos del centro">
+            <div><strong>6</strong><span>Tipos de clases</span></div>
+            <div><strong>5</strong><span>Áreas de apoyo</span></div>
+            <div><strong>07-22</strong><span>Horario</span></div>
+        </div>
+    </div>
+    <img src="assets/img/logo_sin_fondo.png" alt="Logotipo del centro deportivo" id="logo-inicio">
+</nav>
+<section id="horario-inicio" class="horario-inicio">
+    <div class="seccion-cabecera">
+        <p class="inicio-etiqueta">PLANIFICA TU SEMANA</p>
+        <h2>Horario del centro</h2>
+        <p>Consulta las franjas principales antes de elegir tu próxima actividad.</p>
+    </div>
+    <div class="horario-inicio-grid">
+        <article><strong>Lunes</strong><span>07:00 - 22:00</span><small>Fuerza · Cardio · Movilidad</small></article>
+        <article><strong>Martes</strong><span>07:00 - 22:00</span><small>HIIT · Funcional · Fuerza</small></article>
+        <article><strong>Miércoles</strong><span>07:00 - 22:00</span><small>Cardio · Musculación · Yoga</small></article>
+        <article><strong>Jueves</strong><span>07:00 - 22:00</span><small>Movilidad · Fuerza · HIIT</small></article>
+        <article><strong>Viernes</strong><span>07:00 - 22:00</span><small>Funcional · Cardio · Fuerza</small></article>
+        <article><strong>Sábado</strong><span>08:00 - 18:00</span><small>Sesiones abiertas</small></article>
+        <article><strong>Domingo</strong><span>09:00 - 14:00</span><small>Movilidad · Recuperación</small></article>
+    </div>
+</section>
+<nav id="actividades">
+    <div class="seccion-cabecera">
+        <p class="inicio-etiqueta">ENTRENAMIENTO PARA TODOS</p>
+        <h2>Actividades</h2>
+        <p>Elige tu ritmo y encuentra la sesión que mejor encaja contigo.</p>
+        <div class="actividades-resumen" aria-label="Resumen de actividades">
+            <div><strong>01</strong><span>Fuerza</span></div>
+            <div><strong>02</strong><span>Resistencia</span></div>
+            <div><strong>03</strong><span>Movilidad</span></div>
+            <div><strong>04</strong><span>Funcional</span></div>
+        </div>
+    </div>
+    <div class="ventana-actividades" aria-label="Carrusel de actividades">
+        <div class="pista-actividades">
+            <article class="tarjeta-actividad activo">
+                <img src="assets/img/actividad1.jpg" alt="Clase de musculación">
+                <div class="contenido-actividad">
+                    <p class="inicio-etiqueta">01 / FUERZA</p>
+                    <h3>Musculación</h3>
+                    <p>Entrenamiento guiado para ganar fuerza, mejorar la técnica y avanzar con un plan adaptado a tu nivel.</p>
+                    <table class="detalles-actividad">
+                        <tr><th>Precio</th><th>Horario</th><th>Duración</th></tr>
+                        <tr><td>30,00 $</td><td>17:00 H</td><td>60 min</td></tr>
+                    </table>
+                </div>
+            </article>
+            <article class="tarjeta-actividad">
+                <img src="assets/img/actividad2.jpg" alt="Clase de cardio">
+                <div class="contenido-actividad">
+                    <p class="inicio-etiqueta">02 / ENERGÍA</p>
+                    <h3>Cardio intenso</h3>
+                    <p>Una sesión dinámica para activar todo el cuerpo, mejorar tu resistencia y salir con energía renovada.</p>
+                    <table class="detalles-actividad">
+                        <tr><th>Precio</th><th>Horario</th><th>Duración</th></tr>
+                        <tr><td>30,00 $</td><td>18:00 H</td><td>45 min</td></tr>
+                    </table>
+                </div>
+            </article>
+            <article class="tarjeta-actividad">
+                <img src="assets/img/actividad3.png" alt="Clase de entrenamiento funcional">
+                <div class="contenido-actividad">
+                    <p class="inicio-etiqueta">03 / MOVIMIENTO</p>
+                    <h3>Funcional</h3>
+                    <p>Combina fuerza, coordinación y movilidad con ejercicios variados que se trasladan a tu vida diaria.</p>
+                    <table class="detalles-actividad">
+                        <tr><th>Precio</th><th>Horario</th><th>Duración</th></tr>
+                        <tr><td>30,00 $</td><td>19:00 H</td><td>50 min</td></tr>
+                    </table>
+                </div>
+            </article>
+            <article class="tarjeta-actividad">
+                <img src="assets/img/actividad4.png" alt="Clase de fuerza">
+                <div class="contenido-actividad">
+                    <p class="inicio-etiqueta">04 / POTENCIA</p>
+                    <h3>Fuerza total</h3>
+                    <p>Trabaja los principales grupos musculares con una rutina completa y progresiva para superarte.</p>
+                    <table class="detalles-actividad">
+                        <tr><th>Precio</th><th>Horario</th><th>Duración</th></tr>
+                        <tr><td>32,00 $</td><td>16:00 H</td><td>60 min</td></tr>
+                    </table>
+                </div>
+            </article>
+            <article class="tarjeta-actividad">
+                <img src="assets/img/actividad5.jpg" alt="Clase de resistencia">
+                <div class="contenido-actividad">
+                    <p class="inicio-etiqueta">05 / CONSTANCIA</p>
+                    <h3>Resistencia</h3>
+                    <p>Mejora tu capacidad física con intervalos controlados y un ritmo que te ayuda a mantener el esfuerzo.</p>
+                    <table class="detalles-actividad">
+                        <tr><th>Precio</th><th>Horario</th><th>Duración</th></tr>
+                        <tr><td>28,00 $</td><td>18:30 H</td><td>45 min</td></tr>
+                    </table>
+                </div>
+            </article>
+            <article class="tarjeta-actividad">
+                <img src="assets/img/actividad6.jpg" alt="Clase de movilidad">
+                <div class="contenido-actividad">
+                    <p class="inicio-etiqueta">06 / EQUILIBRIO</p>
+                    <h3>Movilidad</h3>
+                    <p>Libera tensión, mejora tu rango de movimiento y prepara el cuerpo para entrenar mejor y recuperarte.</p>
+                    <table class="detalles-actividad">
+                        <tr><th>Precio</th><th>Horario</th><th>Duración</th></tr>
+                        <tr><td>25,00 $</td><td>20:00 H</td><td>40 min</td></tr>
+                    </table>
+                </div>
+            </article>
+        </div>
+        <button class="flecha-carrusel flecha-carrusel-anterior" type="button" aria-label="Actividad anterior">&#8592;</button>
+        <button class="flecha-carrusel flecha-carrusel-siguiente" type="button" aria-label="Siguiente actividad">&#8594;</button>
+    </div>
+</nav>
+<nav id="contacto" class="contacto-seccion">
+    <div class="seccion-cabecera">
+        <p class="inicio-etiqueta">ESTAMOS PARA AYUDARTE</p>
+        <h2>Contacto</h2>
+        <p>Resuelve tus dudas, visita el centro o reserva tu próxima sesión.</p>
+    </div>
+    <div class="cuadricula-contacto cuadricula-contacto-principal">
+        <article class="tarjeta-contacto tarjeta-formulario-contacto">
+            <div class="tarjeta-contacto-cabecera">
+                <span class="contacto-icono" aria-hidden="true">&#9993;</span>
+                <div><h3>Contacto</h3></div>
+            </div>
+            <div class="datos-contacto">
+                <a href="tel:+34958123456"><strong><h3>Teléfono:</h3></strong><br><span>958 123 456</span></a><br><br><hr><br>
+                <a href="mailto:hola@templocoba.es"><strong><h3>Correo:</h3></strong><br><span>contacto@templocoba.es</span></a><br><br><hr><br>
+                <div class="redes-sociales"><strong><h3>Redes sociales: </h3></strong><span><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a><br><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a><br><a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok</a><br></span></div>
+            </div>
+        </article>
+        <article class="tarjeta-contacto tarjeta-ubicacion">
+            <div class="tarjeta-contacto-cabecera">
+                <span class="contacto-icono" aria-hidden="true">&#9679;</span>
+                <div><h3>Ubicación</h3></div>
+            </div>
+            <address>Calle donde vive tu mamá, 24<br>18008 Granada, España</address>
+            <a class="ubicacion-enlace" href="https://www.google.com/maps?sca_esv=8e748a2716bd8857&biw=1536&bih=730&sxsrf=APpeQntfjoy1fodwVSyEotH2wi1xzDpHlQ:1790341624979&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2ZvYyBncmFuYWRhMg4QLhiABBjHARivARiOBTIGEAAYFhgeMgIQJjIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIFEAAY7wVIoBZQ1wJYuhVwA3gBkAEAmAGpAaABigeqAQM0LjS4AQPIAQD4AQGYAgugAsYHwgIKEAAYRxjWBBiwA8ICBRAAGIAEwgILEC4YgAQYxwEYrwHCAgoQABiABBiKBRhDwgIIEAAYFhgeGArCAgUQIRigAZgDAIgGAZAGCJIHAzMuOKAHrTCyBwMwLji4B7oHwgcHMC41LjUuMcgHKIAIAQ&um=1&ie=UTF-8&fb=1&gl=es&sa=X&geocode=KZ0uzh2w_XENMW5mI2Q4W2_-&daddr=C.+Joaqu%C3%ADn+Blume,+2,+18200+Maracena,+Granada" target="_blank" rel="noreferrer">Abrir en Google Maps</a>
+            <iframe title="Mapa de ubicación de Templo Coba" src="https://www.google.com/maps?q=Avenida+del+Deporte+24+Madrid&output=embed" loading="lazy"></iframe>
+        </article>
+        <article class="tarjeta-contacto tarjeta-reclamaciones">
+            <div class="tarjeta-contacto-cabecera">
+                <span class="contacto-icono" aria-hidden="true">!</span>
+                <div><h3>Reclamaciones</h3></div>
+            </div>
+            <p>Cuéntanos qué ha ocurrido.</p>
+            <form id="formulario-reclamacion" class="contacto-form">
+                <label for="titulo-reclamacion">Título</label>
+                <input id="titulo-reclamacion" name="titulo" type="text" placeholder="Resumen de la reclamación" required>
+                <label for="informacion-reclamacion">Información</label>
+                <textarea id="informacion-reclamacion" name="informacion" rows="5" placeholder="Describe lo ocurrido con el mayor detalle posible..." required></textarea>
+                <button type="submit">Enviar reclamación</button>
+                <p id="estado-reclamacion" class="contacto-estado" role="status" aria-live="polite"></p>
+            </form>
+        </article>
+    </div>
+</nav>
+
+<footer>
+    <table>
+        <tr>
+            <td><a href="#inicio">Inicio</a></td>
+            <td><a href="assets/html/productos.html#productos">Productos</a></td>
+            <td><a href="assets/html/mis_actividades.html#mis-actividades">Mis actividades</a></td>
+            <td><a href="#contacto">Contacto</a></td>
+                <td><a href="assets/html/inicio_de_sesion.html#inicio-sesion">Inicio de sesión</a></td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>
