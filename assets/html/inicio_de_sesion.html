@@ -7,39 +7,116 @@
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/script.js" defer></script>
 </head>
-<body>
+<body class="pagina-sesion">
+<!-- NAVEGACION PRINCIPAL -->
 <header>
-    <table id="headertable">
+            <table id="tabla-encabezado">
         <tr>
-                <td><img src="../img/logo_sin_fondo_texto.png" alt="Logotipo del centro deportivo"></td>
-                <td><a href="../../index.html#inicio">Inicio</a></td>
-                <td><a href="productos.html#productos">Productos</a></td>
-                <td><a href="../../index.html#actividades">Actividades</a></td>
-                <td><a href="../../index.html#contacto">Contacto</a></td>
-                <td><a href="#inicio_de_sesion">Inicio de sesión</a></td>
+            <td><a href="../../index.html#inicio"><img src="../img/logo_sin_fondo_texto.png" alt="Logotipo del centro deportivo"></a></td>
+            <td><a href="../../index.html#inicio">Inicio</a></td>
+            <td><a href="productos.html#productos">Productos</a></td>
+            <td><a href="mis_actividades.html#mis-actividades">Mis actividades</a></td>
+            <td><a href="../../index.html#contacto">Contacto</a></td>
+            <td><a href="#inicio-sesion">Inicio de sesión</a></td>
         </tr>
     </table>
 </header>
-<nav id="inicio_de_sesion">
-    <table>
-        <tr>
-            <td>
-                <h3><button>Iniciar sesión</button></h3>
-            </td>
-            <td>
-                <h3><button>Registrarse</button></h3>
-            </td>
-        </tr>
-    </table>
-</nav>
+    <!-- FORMULARIOS DE ACCESO Y REGISTRO -->
+    <main id="inicio-sesion" class="acceso-seccion">
+        <div class="acceso-intro">
+            <p class="inicio-etiqueta">ÁREA PRIVADA DEL CENTRO</p>
+            <h1>Tu entrenamiento, siempre contigo</h1>
+            <p>Accede a tu espacio personal o crea una cuenta para disfrutar de todas las herramientas de Templo Coba.</p>
+        </div>
+        <div class="acceso-contenedor">
+            <div class="acceso-pestanas" role="tablist" aria-label="Acceso a la cuenta">
+                <button class="acceso-pestana activo" type="button" role="tab" aria-selected="true" aria-controls="panel-inicio" data-panel-acceso="panel-inicio">Iniciar sesión</button>
+                <button class="acceso-pestana" type="button" role="tab" aria-selected="false" aria-controls="panel-registro" data-panel-acceso="panel-registro">Registrarse</button>
+            </div>
+            <section class="acceso-panel activo" id="panel-inicio" role="tabpanel">
+                <div class="acceso-panel-cabecera">
+                    <span class="acceso-numero">01</span>
+                    <div>
+                        <p class="inicio-etiqueta">BIENVENIDO DE NUEVO</p>
+                        <h2>Iniciar sesión</h2>
+                    </div>
+                </div>
+                <form id="formulario-inicio" class="formulario-acceso">
+                    <label for="correo-inicio">Correo electrónico</label>
+                    <input id="correo-inicio" name="correo" type="email" placeholder="tu@email.com" autocomplete="email" required>
+                    <label for="contrasena-inicio">Contraseña</label>
+                    <input id="contrasena-inicio" name="contrasena" type="password" placeholder="Tu contraseña" autocomplete="current-password" required>
+                    <div class="formulario-opciones">
+                        <label class="casilla-opcion"><input type="checkbox" name="recordarme"> Recordarme</label>
+                        <a href="#recuperar">¿Has olvidado tu contraseña?</a>
+                    </div>
+                    <button type="submit">Entrar en mi cuenta</button>
+                    <p id="estado-inicio" class="estado-acceso" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+            <section class="acceso-panel" id="panel-registro" role="tabpanel" hidden>
+                <div class="acceso-panel-cabecera">
+                    <span class="acceso-numero">02</span>
+                    <div>
+                        <p class="inicio-etiqueta">NUEVA CUENTA</p>
+                        <h2>Crear cuenta</h2>
+                    </div>
+                </div>
+                <form id="formulario-registro" class="formulario-acceso">
+                    <div class="campos-dobles">
+                        <div>
+                            <label for="nombre-registro">Nombre</label>
+                            <input id="nombre-registro" name="nombre" type="text" placeholder="Tu nombre" autocomplete="given-name" required>
+                        </div>
+                        <div>
+                            <label for="apellidos-registro">Apellidos</label>
+                            <input id="apellidos-registro" name="apellidos" type="text" placeholder="Tus apellidos" autocomplete="family-name" required>
+                        </div>
+                    </div>
+                    <label for="correo-registro">Correo electrónico</label>
+                    <input id="correo-registro" name="correo" type="email" placeholder="tu@email.com" autocomplete="email" required>
+                    <label for="dni-registro">DNI</label>
+                    <input id="dni-registro" name="dni" type="text" placeholder="Tu DNI" autocomplete="off" required>
+                    <label for="telefono-registro">Teléfono</label>
+                    <input id="telefono-registro" name="telefono" type="tel" placeholder="Tu teléfono" autocomplete="tel" required>
+                    <label for="tipo-usuario">Tipo de usuario</label>
+                    <select id="tipo-usuario" name="tipo-usuario" required>
+                        <option value="usuario">Usuario</option>
+                        <option value="nutricionista">Nutricionista</option>
+                        <option value="entrenador">Entrenador personal</option>
+                        <option value="mantenimiento">Personal de mantenimiento</option>
+                        <option value="gimnasio">Personal del gimnasio</option>
+                    </select>
+                    <div id="grupo-codigo-personal" class="campo-codigo" hidden>
+                        <label for="codigo-personal">Código de personal</label>
+                        <input id="codigo-personal" name="codigo-personal" type="text" placeholder="Introduce tu código" autocomplete="off">
+                        <small id="ayuda-codigo-personal">Este código confirma tu tipo de cuenta.</small>
+                    </div>
+                    <div class="campos-dobles">
+                        <div>
+                            <label for="contrasena-registro">Contraseña</label>
+                            <input id="contrasena-registro" name="contrasena" type="password" placeholder="Crea una contraseña" autocomplete="new-password" required>
+                        </div>
+                        <div>
+                            <label for="confirmar-contrasena">Repetir contraseña</label>
+                            <input id="confirmar-contrasena" name="confirmar-contrasena" type="password" placeholder="Repítela" autocomplete="new-password" required>
+                        </div>
+                    </div>
+                    <label class="casilla-opcion"><input type="checkbox" name="condiciones" required> Acepto las condiciones de uso</label>
+                    <button type="submit">Crear mi cuenta</button>
+                    <p id="estado-registro" class="estado-acceso" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+        </div>
+    </main>
 <footer>
     <table>
         <tr>
             <td><a href="../../index.html#inicio">Inicio</a></td>
             <td><a href="productos.html#productos">Productos</a></td>
-            <td><a href="../../index.html#actividades">Actividades</a></td>
+            <td><a href="mis_actividades.html#mis-actividades">Mis actividades</a></td>
             <td><a href="../../index.html#contacto">Contacto</a></td>
-            <td><a href="#inicio_de_sesion">Inicio de sesión</a></td>
+            <td><a href="#inicio-sesion">Inicio de sesión</a></td>
         </tr>
     </table>
 </footer>
