@@ -356,6 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	renderizarDirectorio();
 	// RESERVAS Y AGENDA
 	const renderizarSesionesEntrenador = () => {
+		if (!document.querySelector('#entrenamientos-grupales') || !document.querySelector('#entrenamientos-individuales')) return;
 		const entrenador = document.querySelector('#panel-entrenadores .tabla-profesional:not([hidden]) .cabecera-profesional strong')?.textContent || 'Marco Polo';
 		const sesiones = sesionesEntrenamiento.filter((sesion) => sesion.entrenador === entrenador);
 		const renderizarTipo = (tipo, idLista) => {

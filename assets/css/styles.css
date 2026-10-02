@@ -806,6 +806,39 @@ button:hover:not(:disabled) {
 .tarjeta-contacto-cabecera h3,
 .tarjeta-contacto-cabecera p {
     margin: 0;}
+.redes-sociales h3 {
+    margin-bottom: 14px;}
+.redes-enlaces {
+    display: grid;
+    gap: 10px;}
+.redes-enlaces a {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    width: fit-content;}
+.redes-icono {
+    border-radius: 4px;
+    fill: currentColor;
+    height: 30px;
+    padding: 5px;
+    width: 30px;}
+.instagram-icono {
+    background: #c13584;
+    color: #fff;}
+.instagram-icono rect,
+.instagram-icono circle:not(.instagram-punto) {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;}
+.facebook-icono {
+    background: #1877f2;
+    color: #fff;}
+.tiktok-icono {
+    background: #111;
+    color: #fff;}
+.tiktok-icono .tiktok-sombra {
+    fill: #25f4ee;
+    transform: translate(-1px, 0);}
 .contacto-form {
     display: grid;
     gap: 9px;
